@@ -1,4 +1,5 @@
-import { Button } from "@/components/ui/button";
+import HeroSection from "@/components/sections/HeroSection";
+import ServicesSection from "@/components/sections/ServicesSection";
 import {
   Card,
   CardContent,
@@ -6,12 +7,16 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-orange-500 to-orange-600 text-white py-20">
+      <HeroSection />
+      <ServicesSection />
+
+      {/* About Section */}
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 font-montserrat">
             СтройМастер
